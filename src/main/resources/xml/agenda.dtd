@@ -1,0 +1,15 @@
+<!ELEMENT agenda (contactos|citas)*>
+        <!ELEMENT contactos (contacto)*>
+        <!ELEMENT contacto (nombre|telefono|email|apellidos)*>
+        <!ATTLIST contacto
+                alias CDATA #REQUIRED>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT telefono (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT apellidos (#PCDATA)>
+        <!ELEMENT citas (cita)*>
+        <!ELEMENT cita (titulo|lugar|fecha|hora)*>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT lugar (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT hora (#PCDATA)>

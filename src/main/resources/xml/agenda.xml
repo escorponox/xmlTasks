@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE agenda SYSTEM "agenda.dtd">
+<agenda>
+    <contactos>
+        <contacto alias="pavo1">
+            <nombre>pavo1nombre</nombre>
+            <telefono>999-999-999</telefono>
+            <email>aaa@gmail.com</email>
+        </contacto>
+        <contacto alias="pavo2">
+            <nombre>pavo2nombre</nombre>
+            <apellidos>pavo2apellidos</apellidos>
+            <telefono>999-999-999</telefono>
+        </contacto>
+    </contactos>
+    <citas>
+        <cita>
+            <titulo>titulo1</titulo>
+            <lugar>girona</lugar>
+            <fecha>19/11/2015</fecha>
+            <hora>19:15</hora>
+        </cita>
+        <cita>
+            <titulo>titulo2</titulo>
+            <lugar>girona2</lugar>
+            <fecha>19/10/2015</fecha>
+            <hora>19:10</hora>
+        </cita>
+    </citas>
+</agenda>
