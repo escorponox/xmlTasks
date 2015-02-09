@@ -15,6 +15,16 @@
             <apellidos>pavo2apellidos</apellidos>
             <telefono>999-999-999</telefono>
         </contacto>
+        <contacto alias="amigo1">
+            <nombre>amigo1</nombre>
+            <apellidos>amigo1apellidos</apellidos>
+            <telefono>999-999-999</telefono>
+        </contacto>
+        <contacto alias="amigo2">
+            <nombre>amigo2</nombre>
+            <apellidos>amigo2apellidos</apellidos>
+            <telefono>999-999-999</telefono>
+        </contacto>
     </contactos>
     <citas>
         <cita>

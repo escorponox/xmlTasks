@@ -12,8 +12,8 @@
                         <th>Alias</th>
                         <th>Nombre</th>
                         <th>Apellidos</th>
-                        <th>Telefono</th>
                         <th>E-mail</th>
+                        <th>Telefono</th>
                     </tr>
                     <xsl:for-each select="xsi:agenda/xsi:contactos/xsi:contacto">
                         <tr>
