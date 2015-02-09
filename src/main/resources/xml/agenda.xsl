@@ -9,6 +9,7 @@
                 <h3>Contactos</h3>
                 <table border="1">
                     <tr bgcolor="#9acd32">
+                        <th>Alias</th>
                         <th>Nombre</th>
                         <th>Apellidos</th>
                         <th>Telefono</th>
@@ -16,6 +17,9 @@
                     </tr>
                     <xsl:for-each select="xsi:agenda/xsi:contactos/xsi:contacto">
                         <tr>
+                            <td>
+                                <xsl:value-of select="@alias"/>
+                            </td>
                             <td>
                                 <xsl:value-of select="xsi:nombre"/>
                             </td>
