@@ -1,72 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="agenda" type="agendaType"/>
-  <xs:complexType name="agendaType">
-    <xs:sequence>
-      <xs:element type="contactosType" name="contactos"/>
-      <xs:element type="citasType" name="citas"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="contactosType">
-    <xs:sequence>
-      <xs:element type="contactoType" name="contacto" maxOccurs="unbounded" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="contactoType">
-    <xs:sequence>
-      <xs:element name="nombre">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="pavo1nombre"/>
-            <xs:enumeration value="pavo2nombre"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element type="xs:string" name="apellidos" minOccurs="0"/>
-      <xs:element type="xs:string" name="telefono"/>
-      <xs:element type="xs:string" name="email" minOccurs="0"/>
-    </xs:sequence>
-    <xs:attribute type="xs:string" name="alias" use="optional"/>
-  </xs:complexType>
-  <xs:complexType name="citasType">
-    <xs:sequence>
-      <xs:element type="citaType" name="cita" maxOccurs="unbounded" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="citaType">
-    <xs:sequence>
-      <xs:element name="titulo">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="titulo1"/>
-            <xs:enumeration value="titulo2"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="lugar">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="girona"/>
-            <xs:enumeration value="girona2"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="fecha">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="19/11/2015"/>
-            <xs:enumeration value="19/10/2015"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="hora">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="19:15"/>
-            <xs:enumeration value="19:10"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
+    <xs:element name="agenda" type="agendaType"/>
+    <xs:complexType name="agendaType">
+        <xs:sequence>
+            <xs:element type="contactosType" name="contactos"/>
+            <xs:element type="citasType" name="citas"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="contactosType">
+        <xs:sequence>
+            <xs:element type="contactoType" name="contacto" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="contactoType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="nombre" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="xs:string" name="apellidos" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="xs:string" name="telefono" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element type="xs:string" name="email" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="alias" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="citasType">
+        <xs:sequence>
+            <xs:element type="citaType" name="cita" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="citaType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="titulo" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="xs:string" name="lugar" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="xs:date" name="fecha" minOccurs="1" maxOccurs="1"/>
+            <xs:element type="xs:time" name="hora" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>
