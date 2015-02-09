@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE agenda SYSTEM "agenda.dtd">
-<agenda xmlns="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.w3schools.com file:///D:/xmlTasks/src/main/resources/xml/agenda.xsd">
+<agenda xmlns="http://myNameSpace.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://myNameSpace.com agenda.xsd">
     <contactos>
         <contacto alias="pavo1">
             <nombre>pavo1nombre</nombre>
