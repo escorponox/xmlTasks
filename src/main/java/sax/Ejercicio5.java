@@ -1,11 +1,11 @@
 package sax;
 
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
 
 public class Ejercicio5 {
 
@@ -77,7 +77,7 @@ public class Ejercicio5 {
 
 			};
 
-			saxParser.parse("D:\\xmlTasks\\src\\main\\resources\\xml\\agenda.xml", handler);
+			saxParser.parse("D:\\xmlTasks\\src\\main\\webapp\\xml\\agenda.xml", handler);
 
 		} catch (Exception e) {
 			e.printStackTrace();

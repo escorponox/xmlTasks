@@ -1,11 +1,12 @@
 package sax;
 
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
 import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Node;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
 public class Ejercicio6 {
@@ -14,7 +15,7 @@ public class Ejercicio6 {
 
 		try {
 
-			File fXmlFile = new File("D:\\xmlTasks\\src\\main\\resources\\xml\\agenda.xml");
+			File fXmlFile = new File("D:\\xmlTasks\\src\\main\\webapp\\xml\\agenda.xml");
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);
